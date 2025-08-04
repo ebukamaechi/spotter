@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter.ai Platform</title>
+    <!-- Use Tailwind CSS for sleek and modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown-arrow {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .group:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .dropdown-menu {
+            transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <!-- Main navigation container -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo section -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-gray-900 dark:text-white">
+                        spotter.ai
+                    </a>
+                </div>
+
+                <!-- Main navigation links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    
+                    <div class="relative group">
+                        <a href="solutions.html" class="text-gray-900 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium px-3 py-2 rounded-md inline-flex items-center">
+                            Solutions
+                            <svg class="dropdown-arrow ml-2 -mr-1 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-white dark:bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                For Sales Teams
+                                            </p>
+                                            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+                                                Boost your sales pipeline with AI-driven insights.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                For Marketing Teams
+                                            </p>
+                                            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+                                                Optimize campaigns and reach the right audience.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                For Customer Support
+                                            </p>
+                                            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+                                                Automate support and improve customer satisfaction.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <a href="platform.html" class="text-indigo-600 dark:text-indigo-400 font-medium px-3 py-2 rounded-md inline-flex items-center">
+                            Platform
+                            <svg class="dropdown-arrow ml-2 -mr-1 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-white dark:bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Features
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Integrations
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                API
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-gray-900 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium px-3 py-2 rounded-md">
+                        Pricing
+                    </a>
+                    <div class="relative group">
+                        <button class="text-gray-900 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium px-3 py-2 rounded-md inline-flex items-center">
+                            Resources
+                            <svg class="dropdown-arrow ml-2 -mr-1 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-white dark:bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Blog
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Case Studies
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Whitepapers
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="text-gray-900 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium px-3 py-2 rounded-md inline-flex items-center">
+                            Company
+                            <svg class="dropdown-arrow ml-2 -mr-1 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div class="relative grid gap-6 bg-white dark:bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                About Us
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Careers
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition ease-in-out duration-150">
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900 dark:text-white">
+                                                Contact
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-base font-medium text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400">
+                        Sign In
+                    </a>
+                    <a href="#" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-150">
+                        Try for free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Hero Section -->
+        <section class="text-center max-w-3xl mx-auto mb-16">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
+                A Platform Built for Scale and Innovation
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400">
+                Explore the powerful features, seamless integrations, and developer-friendly APIs that make spotter.ai the right choice for your business.
+            </p>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8">
+            <!-- Features Card -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+                <div class="flex items-center justify-center h-16 w-16 mb-6 rounded-full bg-indigo-100 dark:bg-indigo-900">
+                    <svg class="h-8 w-8 text-indigo-600 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    Core Features
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    Dive into the powerful capabilities of our AI-powered platform, from advanced analytics to automated workflows designed to accelerate your growth.
+                </p>
+                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors">
+                    Learn more →
+                </a>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+                <div class="flex items-center justify-center h-16 w-16 mb-6 rounded-full bg-blue-100 dark:bg-blue-900">
+                    <svg class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.409 9.333 5 8 5a6 6 0 000 12.001v0-3.5a1.5 1.5 0 013 0v3.5A6 6 0 1012 6.253zm0 0l4.75 4.75M12 6.253l-4.75 4.75" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    Seamless Integrations
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    Connect spotter.ai with your existing tools and services to create a unified ecosystem that works flawlessly with your current stack.
+                </p>
+                <a href="#" class="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
+                    Learn more →
+                </a>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-transform transform hover:scale-105">
+                <div class="flex items-center justify-center h-16 w-16 mb-6 rounded-full bg-teal-100 dark:bg-teal-900">
+                    <svg class="h-8 w-8 text-teal-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    Powerful API
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    Extend and customize the platform's functionality with our comprehensive and well-documented API, giving you full control to build what you need.
+                </p>
+                <a href="#" class="font-medium text-teal-600 hover:text-teal-500 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                    Learn more →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-800 mt-16 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 dark:text-gray-400">
+            &copy; 2025 spotter.ai. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.group').forEach(group => {
+            let timeoutId;
+            const dropdownButton = group.querySelector('button');
+            const dropdownMenu = group.querySelector('.dropdown-menu');
+            
+     
+            group.addEventListener('mouseenter', () => {
+                clearTimeout(timeoutId);
+                dropdownMenu.classList.remove('invisible', 'opacity-0');
+                dropdownMenu.classList.add('visible', 'opacity-100');
+            });
+
+            group.addEventListener('mouseleave', () => {
+                timeoutId = setTimeout(() => {
+                    dropdownMenu.classList.remove('visible', 'opacity-100');
+                    dropdownMenu.classList.add('invisible', 'opacity-0');
+                }, 200); // 200ms delay to allow moving to the dropdown
+            });
+            
+            dropdownButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (dropdownMenu.classList.contains('invisible')) {
+               
+                    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                        if (menu !== dropdownMenu) {
+                            menu.classList.remove('visible', 'opacity-100');
+                            menu.classList.add('invisible', 'opacity-0');
+                        }
+                    });
+                 
+                    dropdownMenu.classList.remove('invisible', 'opacity-0');
+                    dropdownMenu.classList.add('visible', 'opacity-100');
+                } else {
+                  
+                    dropdownMenu.classList.remove('visible', 'opacity-100');
+                    dropdownMenu.classList.add('invisible', 'opacity-0');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!group.contains(e.target)) {
+                    dropdownMenu.classList.remove('visible', 'opacity-100');
+                    dropdownMenu.classList.add('invisible', 'opacity-0');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
